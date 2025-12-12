@@ -125,7 +125,6 @@ const VitalSignsAnalyzer = () => {
     const results = {};
     const allAlerts = [];
 
-    // Parse inputs
     const hrValues = heartRates
       .split(",")
       .map((v) => parseFloat(v.trim()))
@@ -348,7 +347,7 @@ const VitalSignsAnalyzer = () => {
                 type="number"
                 value={patientAge}
                 onChange={(e) => setPatientAge(parseInt(e.target.value))}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                className="w-full px-4 py-2 text-black border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
               />
             </div>
             <div>
@@ -384,7 +383,7 @@ const VitalSignsAnalyzer = () => {
                 value={heartRates}
                 onChange={(e) => setHeartRates(e.target.value)}
                 placeholder="72, 75, 78"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                className="w-full px-4 py-2 text-black border  border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
               />
             </div>
             <div>
@@ -396,7 +395,7 @@ const VitalSignsAnalyzer = () => {
                 value={bloodPressures}
                 onChange={(e) => setBloodPressures(e.target.value)}
                 placeholder="120/80, 118/78"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
               />
             </div>
             <div>
@@ -408,7 +407,7 @@ const VitalSignsAnalyzer = () => {
                 value={spo2Values}
                 onChange={(e) => setSpo2Values(e.target.value)}
                 placeholder="98.5, 98.2, 97.8"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
               />
             </div>
             <div>
@@ -420,7 +419,7 @@ const VitalSignsAnalyzer = () => {
                 value={respiratoryRates}
                 onChange={(e) => setRespiratoryRates(e.target.value)}
                 placeholder="16, 15, 17"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                className="w-full px-4 py-2 text-black border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
               />
             </div>
           </div>
